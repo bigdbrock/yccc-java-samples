@@ -7,14 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.yccc.java.samples.slack.SlackService;
 
 @RestController
-public class Controller 
-{
+public class Controller {
 	@Autowired
 	SlackService slackService;
 	
 	@RequestMapping("/")
-	public String root()
-	{
+	public String root() {
 		return "Welcome to Java!";
 	}
 
